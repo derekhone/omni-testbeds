@@ -2,7 +2,9 @@
 
 **Remnant Fieldworks Inc. · Coherent Inheritance Framework (CIF) · ExecutionProof-governed**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21436016.svg)](https://doi.org/10.5281/zenodo.21436016)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21436015.svg)](https://doi.org/10.5281/zenodo.21436015)
+
+*Concept DOI [10.5281/zenodo.21436015](https://doi.org/10.5281/zenodo.21436015) resolves to the latest version. Versions: v1.0 = [21436016](https://doi.org/10.5281/zenodo.21436016), v1.1 (correction/erratum, current) = [21436092](https://doi.org/10.5281/zenodo.21436092).*
 
 > **Public claim:** A preregistered demonstration of three independently evaluated nonclassicality witnesses — spatial (Bell-CHSH), temporal (Leggett-Garg K3), and contextual (Peres-Mermin) — bound into one chain-linked, independently reconstructable ExecutionProof governance record.
 
@@ -106,7 +108,7 @@ Statistical σ reflects binomial shot noise only.
 - **NIST beacon:** Pulse 1865678 @ 2026-07-19T01:58:00.000Z
 - **LIGO anchor:** GW150914 H1 strain SHA-256 `66c4b196`
 - **GitHub:** https://github.com/derekhone/omni-testbeds
-- **Zenodo DOI:** 10.5281/zenodo.21436016
+- **Zenodo concept DOI (latest):** 10.5281/zenodo.21436015  ·  v1.1 (current): 10.5281/zenodo.21436092  ·  v1.0: 10.5281/zenodo.21436016
 
 ## Citation
 
@@ -119,8 +121,9 @@ Statistical σ reflects binomial shot noise only.
                    Governance Record}},
   year         = 2026,
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21436016},
-  url          = {https://doi.org/10.5281/zenodo.21436016}
+  doi          = {10.5281/zenodo.21436015},
+  url          = {https://doi.org/10.5281/zenodo.21436015},
+  note         = {Concept DOI (latest version); v1.1 correction = 10.5281/zenodo.21436092}
 }
 ```
 

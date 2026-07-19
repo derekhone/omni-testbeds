@@ -1,7 +1,14 @@
 OMNI-1 Zenodo Publication
 ========================
-DOI: 10.5281/zenodo.21436016
-DOI URL: https://doi.org/10.5281/zenodo.21436016
-Record: https://zenodo.org/records/21436016
-Record ID: 21436016
-Published: 2026-07-19
+
+CONCEPT DOI (always resolves to the latest version — cite this):
+  10.5281/zenodo.21436015
+  https://doi.org/10.5281/zenodo.21436015
+
+Versions:
+  v1.0  DOI 10.5281/zenodo.21436016  (2026-07-19)  original release
+  v1.1  DOI 10.5281/zenodo.21436092  (2026-07-18)  correction / erratum — current
+
+v1.1 adds ERRATUM-OMNI-1.md and corrects six narrative inconsistencies against the
+canonical machine record. No measured value, verdict, or the aggregate ALLOW changed.
+Cite the concept DOI (21436015) so readers always land on the latest corrected version.

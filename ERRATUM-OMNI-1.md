@@ -2,7 +2,8 @@
 
 **Remnant Fieldworks Inc. · Coherent Inheritance Framework (CIF) · ExecutionProof-governed**
 
-- **Corrects:** OMNI-1 release, Zenodo concept DOI [10.5281/zenodo.21436016](https://doi.org/10.5281/zenodo.21436016), GitHub `derekhone/omni-testbeds`
+- **Corrects:** OMNI-1 v1.0 (Zenodo version DOI [10.5281/zenodo.21436016](https://doi.org/10.5281/zenodo.21436016)), GitHub `derekhone/omni-testbeds`
+- **Published in:** OMNI-1 v1.1 — Zenodo version DOI [10.5281/zenodo.21436092](https://doi.org/10.5281/zenodo.21436092); concept DOI (always-latest) [10.5281/zenodo.21436015](https://doi.org/10.5281/zenodo.21436015)
 - **Issued:** 2026-07-18
 - **Scope of this document:** transparent, clearly-labeled correction of six inconsistencies between the human-written narrative files and the machine-generated execution record. **No scientific result changes.** All witness values, verdicts, and the aggregate ALLOW are unchanged.
 - **Governing principle:** *Proof Before Power* — the record must survive inspection, not merely sound legendary. Where the narrative and the machine record disagreed, the machine record governs, and the disagreement is disclosed here rather than quietly overwritten.
