@@ -4,20 +4,20 @@
 
 - Experiment: **OMNI-1**  ·  Schema: `omni-proofrecord-1.0`
 - Mode: **SIMULATOR**  ·  Backend: `aer_simulator_ideal`  ·  Job: `n/a (simulator)`
-- Generated: 2026-07-19T01:53:58.895326+00:00
+- Generated: 2026-07-19T01:58:53.817804+00:00
 
 > **Public claim:** A preregistered demonstration of three independently evaluated
 > nonclassicality witnesses bound into one chain-linked, independently reconstructable
 > execution record.
 
-## Aggregate ExecutionProof verdict: **ALLOW**
+## Aggregate ExecutionProof verdict: **GATE-STOP**
 
-`omni_certified = True`
+`omni_certified = False`
 
 | Witness | Statistic | Value | Bound | Threshold | nσ | Verdict |
 |---|---|---|---|---|---|---|
-| Spatial (Bell-CHSH) | S | 2.814 | ≤2.0 (Tsirelson 2.8284) | ≥2.2 | 18.2016 | VALID_ABOVE |
-| Temporal (Leggett-Garg) | K3 | 1.523 | ≤1.0 (qmax 1.5) | ≥1.1 | 13.5038 | VALID_ABOVE |
+| Spatial (Bell-CHSH) | S | 2.788 | ≤2.0 (Tsirelson 2.8284) | ≥2.2 | 17.6202 | VALID_ABOVE |
+| Temporal (Leggett-Garg) | K3 | 1.477 | ≤1.0 (qmax 1.5) | ≥1.1 | 12.3161 | VALID_ABOVE |
 | Contextual (Peres-Mermin) | χ_min | 6.0 | ≤4.0 (q 6.0) | ≥4.5 | 36.5148 | VALID_ABOVE |
 
 ### Contextuality per-state (state-independence = True)
@@ -27,14 +27,14 @@
 
 ## Chain & provenance
 - Previous WITNESS record hash: `30e5a0f3cbf1f2351347c9096cc88e6f5fdc85139cbfe647e1a2ad1d7ec49257`
-- NIST beacon pulse: `1865670` @ 2026-07-19T01:50:00.000Z
+- NIST beacon pulse: `1865675` @ 2026-07-19T01:55:00.000Z
 - LIGO GW150914 anchor: `66c4b196`
 - Manifest (prereg): `38f7b3c1429ec7e87103937cb32750e581667cf4c28c1dcfaea58d833e13f8c2`
 - Manifest (harness): `b95c2672b999547f2eeefc9019082e3e25cfee6730ee390c744259dae7c91d7a`
 
 ## Cryptographic binding
-- OMNI nonce: `86bf9de1d7d4d46658589ac75624084109e988e1ce11ef5b8267435e81cee566`
-- Record hash: `0098524ce928bb47fafed9b54dfde89db72a2b9678fa36647b2b3b59fbabccfc`
+- OMNI nonce: `72e982f6f7a8f53d36605b569c0b44b7dbd8a9fd12019630c1d1450c2426e58b`
+- Record hash: `0746d29773df066076a77c5dc5b0e019e6243b6939ce47570a82f361d06ac119`
 
 ## Verdict logic (preregistered)
 - **ALLOW** — all three VALID_ABOVE, reconstructs, provenance valid
