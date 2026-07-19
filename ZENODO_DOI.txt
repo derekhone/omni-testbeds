@@ -1,0 +1,7 @@
+OMNI-1 Zenodo Publication
+========================
+DOI: 10.5281/zenodo.21436016
+DOI URL: https://doi.org/10.5281/zenodo.21436016
+Record: https://zenodo.org/records/21436016
+Record ID: 21436016
+Published: 2026-07-19
