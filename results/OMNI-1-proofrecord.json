@@ -1,0 +1,489 @@
+{
+  "aggregate_verdict": "ALLOW",
+  "backend": "aer_simulator_ideal",
+  "backend_info": {
+    "calibration_hash": "87957045f55de1dbe8f11cafce4788950a4a4a5bc214a7c7562d1a3f305b5d56",
+    "name": "aer_simulator_ideal",
+    "qubit_mapping": {
+      "A_a0b0": [
+        0,
+        1
+      ],
+      "A_a0b1": [
+        0,
+        1
+      ],
+      "A_a1b0": [
+        0,
+        1
+      ],
+      "A_a1b1": [
+        0,
+        1
+      ],
+      "B_12": [
+        0
+      ],
+      "B_13": [
+        0
+      ],
+      "B_23": [
+        0
+      ],
+      "B_baseline": [
+        0
+      ],
+      "C_000_C1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_000_C2": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_000_C3": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_000_R1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_000_R2": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_000_R3": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ghz_C1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ghz_C2": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ghz_C3": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ghz_R1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ghz_R2": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ghz_R3": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ppp_C1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ppp_C2": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ppp_C3": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ppp_R1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ppp_R2": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_ppp_R3": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "chain": {
+    "manifest_harness_sha256": "b95c2672b999547f2eeefc9019082e3e25cfee6730ee390c744259dae7c91d7a",
+    "manifest_prereg_sha256": "38f7b3c1429ec7e87103937cb32750e581667cf4c28c1dcfaea58d833e13f8c2",
+    "previous_witness_record_hash": "30e5a0f3cbf1f2351347c9096cc88e6f5fdc85139cbfe647e1a2ad1d7ec49257"
+  },
+  "circuits": {
+    "A_a0b0": {
+      "n_qubits": 2,
+      "qasm_sha256": "3914da8c86665654feb332759c3670b21d8e8253c12b6b0700cb41835a8b8b2f"
+    },
+    "A_a0b1": {
+      "n_qubits": 2,
+      "qasm_sha256": "818e6eb129ee2f3ef8c2125a0983f40f5bba1e26599af2c7054130f5ca458d34"
+    },
+    "A_a1b0": {
+      "n_qubits": 2,
+      "qasm_sha256": "51bacfb7df357f3335c74dfbf12f05f7d3decca18565e1257ecc0d231c2d1e61"
+    },
+    "A_a1b1": {
+      "n_qubits": 2,
+      "qasm_sha256": "8c6cc894938a87f01a06ecd1cb4116bd6e584f03778158de05c0a75d6c5ad734"
+    },
+    "B_12": {
+      "n_qubits": 1,
+      "qasm_sha256": "67db6cd69f7f3d0c3518ec37accf2e37b522c379b80fd90fe36e138a59eb39cf"
+    },
+    "B_13": {
+      "n_qubits": 1,
+      "qasm_sha256": "d1ed8e65396ffa0091a6fdc3ed19527e9f0a337ffab1b492861340a7a0fba788"
+    },
+    "B_23": {
+      "n_qubits": 1,
+      "qasm_sha256": "cd1229aa3997bd9b1eb6b932434837261c01749d3c7e69cca54b88234bed3467"
+    },
+    "B_baseline": {
+      "n_qubits": 1,
+      "qasm_sha256": "50db06faea08654c914ba9d25a7270c8eb25f6f2b545eb024fce4434ec6922e2"
+    },
+    "C_000_C1": {
+      "n_qubits": 5,
+      "qasm_sha256": "79d792aa49b4f4db146daa0c13a7b73593c0943a8f0691bd1e52f7ef1e9051e1"
+    },
+    "C_000_C2": {
+      "n_qubits": 5,
+      "qasm_sha256": "29ca79825f26d53e6731bcf8110b03688fe436038238813beaba62f8924635a9"
+    },
+    "C_000_C3": {
+      "n_qubits": 5,
+      "qasm_sha256": "b25d8b03ff418703d5d87c380de05511ee5a7de20c94fec8e662ccfec854c769"
+    },
+    "C_000_R1": {
+      "n_qubits": 5,
+      "qasm_sha256": "e00f9cb792cc8392c2c9af14ce1207f144dad11c487cb61e85d679dffa6cc7e1"
+    },
+    "C_000_R2": {
+      "n_qubits": 5,
+      "qasm_sha256": "590e772045b826da36d809421a77f5b5f45931a6d66ed29d432b331d1837b6be"
+    },
+    "C_000_R3": {
+      "n_qubits": 5,
+      "qasm_sha256": "4eb71d096d198e462cfaa01f45eb7d6d22a7714159da8964fbc132f6e3d0b568"
+    },
+    "C_ghz_C1": {
+      "n_qubits": 5,
+      "qasm_sha256": "6eb29914bb47cfe3e3241be1caf1efc42b24bf776a19ccb61a54ed6410099365"
+    },
+    "C_ghz_C2": {
+      "n_qubits": 5,
+      "qasm_sha256": "849a721981ebd34aca1d9d0e0762c1b65ee90e1df7875a7087167e4d7bda3ba7"
+    },
+    "C_ghz_C3": {
+      "n_qubits": 5,
+      "qasm_sha256": "8fa26619141dc36f6796542d7aebfcd8fe10b8b27935d4b29eb1339560540cef"
+    },
+    "C_ghz_R1": {
+      "n_qubits": 5,
+      "qasm_sha256": "4ba837eeda91ed842a78d74e88f85b54ae2f8fd7235647fb80195a0356f4ecc5"
+    },
+    "C_ghz_R2": {
+      "n_qubits": 5,
+      "qasm_sha256": "e92dd70425efc72f250c78daa9effa7354b68f01efb625eb9b9ee5d1837530fe"
+    },
+    "C_ghz_R3": {
+      "n_qubits": 5,
+      "qasm_sha256": "3d927cb7e2f9b61d98de12adc6714a654cdc571400199e3d5209cd1c6f2c6bd4"
+    },
+    "C_ppp_C1": {
+      "n_qubits": 5,
+      "qasm_sha256": "e1b2a62f0eb411471c4133f025586e9e47b342208d4a1164da2e9b60f6ad8049"
+    },
+    "C_ppp_C2": {
+      "n_qubits": 5,
+      "qasm_sha256": "3ddfe4ed72eb3559bfafad9fca2d08d50d5df1e90bdbe9a29d0015a2fafc4497"
+    },
+    "C_ppp_C3": {
+      "n_qubits": 5,
+      "qasm_sha256": "d4caa75b395dc45d479cb2205277e1b10db847750aadfa904ae04a1da0e8ed40"
+    },
+    "C_ppp_R1": {
+      "n_qubits": 5,
+      "qasm_sha256": "3a9d910650230cf2a2bc9966576c99cb1a6949e31024b363153f073b2e73ca35"
+    },
+    "C_ppp_R2": {
+      "n_qubits": 5,
+      "qasm_sha256": "ee83a581d5a8a2e39347a1f758b22ba0e9abd8dff9ecd1618ec051f87dd669a3"
+    },
+    "C_ppp_R3": {
+      "n_qubits": 5,
+      "qasm_sha256": "009ef087b9e057fb3f188eed25fdd2d07dd66f499fe3939b08f2ffd3d0fa07ee"
+    }
+  },
+  "experiment": "OMNI-1",
+  "external_entropy": {
+    "ligo_gw150914_hash": "66c4b196",
+    "nist_beacon_pulse": 1865670,
+    "nist_timestamp": "2026-07-19T01:50:00.000Z",
+    "nist_value": "7355615369F2266CA590187DFC3E16A447685A3CB27A841CECE58561E9CADC34F2A74B7368572D571FF88DEE10AC2FD8F2FE9DE72D11373AAB7482F60E57BAEE"
+  },
+  "framework": "Coherent Inheritance Framework (CIF)",
+  "generated_at": "2026-07-19T01:53:58.895326+00:00",
+  "governance": "ExecutionProof",
+  "job_id": "",
+  "mode": "SIMULATOR",
+  "omni_certified": true,
+  "omni_nonce": "86bf9de1d7d4d46658589ac75624084109e988e1ce11ef5b8267435e81cee566",
+  "raw_counts": {
+    "A_a0b0": {
+      "00": 823,
+      "01": 140,
+      "10": 143,
+      "11": 894
+    },
+    "A_a0b1": {
+      "00": 157,
+      "01": 829,
+      "10": 867,
+      "11": 147
+    },
+    "A_a1b0": {
+      "00": 809,
+      "01": 155,
+      "10": 172,
+      "11": 864
+    },
+    "A_a1b1": {
+      "00": 864,
+      "01": 136,
+      "10": 136,
+      "11": 864
+    },
+    "B_12": {
+      "00": 1113,
+      "01": 140,
+      "10": 369,
+      "11": 378
+    },
+    "B_13": {
+      "00": 363,
+      "01": 343,
+      "10": 1168,
+      "11": 126
+    },
+    "B_23": {
+      "00": 396,
+      "01": 358,
+      "10": 121,
+      "11": 1125
+    },
+    "B_baseline": {
+      "00": 2000
+    },
+    "C_000_C1": {
+      "000": 1000,
+      "101": 1000
+    },
+    "C_000_C2": {
+      "000": 1003,
+      "101": 997
+    },
+    "C_000_C3": {
+      "001": 985,
+      "100": 1015
+    },
+    "C_000_R1": {
+      "000": 520,
+      "011": 465,
+      "101": 509,
+      "110": 506
+    },
+    "C_000_R2": {
+      "000": 2000
+    },
+    "C_000_R3": {
+      "000": 520,
+      "011": 492,
+      "101": 507,
+      "110": 481
+    },
+    "C_ghz_C1": {
+      "000": 501,
+      "011": 481,
+      "101": 516,
+      "110": 502
+    },
+    "C_ghz_C2": {
+      "000": 497,
+      "011": 526,
+      "101": 505,
+      "110": 472
+    },
+    "C_ghz_C3": {
+      "100": 2000
+    },
+    "C_ghz_R1": {
+      "000": 1030,
+      "011": 970
+    },
+    "C_ghz_R2": {
+      "000": 1073,
+      "011": 927
+    },
+    "C_ghz_R3": {
+      "101": 1034,
+      "110": 966
+    },
+    "C_ppp_C1": {
+      "000": 964,
+      "110": 1036
+    },
+    "C_ppp_C2": {
+      "000": 993,
+      "110": 1007
+    },
+    "C_ppp_C3": {
+      "010": 1005,
+      "100": 995
+    },
+    "C_ppp_R1": {
+      "000": 2000
+    },
+    "C_ppp_R2": {
+      "000": 514,
+      "011": 477,
+      "101": 509,
+      "110": 500
+    },
+    "C_ppp_R3": {
+      "000": 495,
+      "011": 500,
+      "101": 502,
+      "110": 503
+    }
+  },
+  "record_hash": "0098524ce928bb47fafed9b54dfde89db72a2b9678fa36647b2b3b59fbabccfc",
+  "schema": "omni-proofrecord-1.0",
+  "shots": {
+    "per_arm": {
+      "A": 8000,
+      "B": 8000,
+      "C": 36000
+    },
+    "per_circuit": {
+      "A_a0b0": 2000,
+      "A_a0b1": 2000,
+      "A_a1b0": 2000,
+      "A_a1b1": 2000,
+      "B_12": 2000,
+      "B_13": 2000,
+      "B_23": 2000,
+      "B_baseline": 2000,
+      "C_000_C1": 2000,
+      "C_000_C2": 2000,
+      "C_000_C3": 2000,
+      "C_000_R1": 2000,
+      "C_000_R2": 2000,
+      "C_000_R3": 2000,
+      "C_ghz_C1": 2000,
+      "C_ghz_C2": 2000,
+      "C_ghz_C3": 2000,
+      "C_ghz_R1": 2000,
+      "C_ghz_R2": 2000,
+      "C_ghz_R3": 2000,
+      "C_ppp_C1": 2000,
+      "C_ppp_C2": 2000,
+      "C_ppp_C3": 2000,
+      "C_ppp_R1": 2000,
+      "C_ppp_R2": 2000,
+      "C_ppp_R3": 2000
+    }
+  },
+  "shots_per_arm": 2000,
+  "verdict": "ALLOW",
+  "witness_contextual": {
+    "certified": true,
+    "chi_000": 6.0,
+    "chi_ghz": 6.0,
+    "chi_min": 6.0,
+    "chi_ppp": 6.0,
+    "n_sigma_min": 36.5148,
+    "noncontextual_bound": 4.0,
+    "quantum_bound": 6.0,
+    "state_independent": true,
+    "verdict": "VALID_ABOVE"
+  },
+  "witness_hashes": {
+    "contextual": "8e8c71b17c53f7def1317908c66a6fc5f8d999f22ab9dc987450017d17f3b7da",
+    "spatial": "4560924f1be6089e8ba87bed11b341afb44bdb64e5efa8cca1763a65ac8f9915",
+    "temporal": "a9c3e61c9e19823b5fb3ce65968a43390d0e2d149c23f17babc56dafd22d096f"
+  },
+  "witness_spatial": {
+    "S": 2.814,
+    "certified": true,
+    "classical_bound": 2.0,
+    "n_sigma": 18.2016,
+    "tsirelson": 2.8284,
+    "verdict": "VALID_ABOVE"
+  },
+  "witness_temporal": {
+    "K3": 1.523,
+    "certified": true,
+    "macrorealist_bound": 1.0,
+    "n_sigma": 13.5038,
+    "quantum_max": 1.5,
+    "verdict": "VALID_ABOVE"
+  }
+}
