@@ -1,16 +1,9 @@
 # OMNI-1 — STATUS
 
 **Remnant Fieldworks Inc. · Coherent Inheritance Framework (CIF) · ExecutionProof-governed**
-**As of:** simulator validation complete; hardware run withheld *(this snapshot pre-dates execution).*
+**As of 2026-07-19:** hardware execution **COMPLETE**, independently verified (**ALLOW**), published to GitHub and Zenodo.
 
-> **POST-EXECUTION UPDATE (2026-07-18):** OMNI-1 has since been executed on IBM Quantum
-> `ibm_kingston` (job `d9e3064jeosc73fi98e0`), independently verified (**ALLOW**), and published
-> to GitHub and Zenodo (concept DOI 10.5281/zenodo.21436016). The executed run used **52,000
-> shots total** (Arm A 8,000 / Arm B 8,000 / Arm C 36,000 — uniform 2,000/circuit), matching the
-> locked harness; the "70,000-shot" figure below reflects the preregistration *prose*, which was
-> inconsistent with the locked harness and never reconciled before locking. The budget fallback
-> was **not** invoked (all three Arm C states ran). See **ERRATUM-OMNI-1.md** for the full
-> correction record. The sections below are retained as the original pre-execution snapshot.
+> **Execution summary:** OMNI-1 executed on IBM Quantum `ibm_kingston` (job `d9e3064jeosc73fi98e0`), **52,000 shots total** (Arm A 8,000 / Arm B 8,000 / Arm C 36,000 — uniform 2,000/circuit). Results: S = 2.797, K3 = 1.502, χmin = 5.126. Aggregate ExecutionProof verdict **ALLOW**. Independent verifier PASS. Published to Zenodo — concept DOI (always-latest): [10.5281/zenodo.21436015](https://doi.org/10.5281/zenodo.21436015); v1.1 (corrected): [10.5281/zenodo.21436092](https://doi.org/10.5281/zenodo.21436092); v1.0 (original): [10.5281/zenodo.21436016](https://doi.org/10.5281/zenodo.21436016). See **[ERRATUM-OMNI-1.md](ERRATUM-OMNI-1.md)** for the six-point correction record (shot count, nonce, contextuality, K3 wording, two withdrawn overclaims, qubit-mapping logging defect). No measured value or verdict changed.
 
 ## Completed
 
@@ -35,40 +28,9 @@
   - Tamper test: corrupting a single raw count triggers `record_hash mismatch` → **DENY**,
     confirming the reconstruction / provenance gate works.
 
-## GATED — NOT yet done (blocked by preregistration §8)
+## Hardware execution (completed 2026-07-19)
 
-- [ ] **IBM Quantum hardware run** — **withheld**. Per user directive and preregistration §8,
-      the hardware run is not authorized until:
-  1. **Secrets are rotated.** The IBM Quantum API token and the Zenodo token were exposed in
-     the working environment / prior context and MUST be rotated before any authenticated
-     hardware submission. The harness will refuse to submit unless `--authorize-hardware` AND
-     `--allow-unrotated` are both passed (the latter only after rotation).
-  2. **Scientific + IP-integrity review** of the design is complete.
-- [ ] **Zenodo publication** of the hardware ProofRecord (after a valid hardware run).
-- [ ] **GitHub push** to a Remnant Fieldworks / derekhone repository.
-
-## How to run the hardware step (only after the two gate conditions are met)
-
-```bash
-# 1. Rotate IBM Quantum + Zenodo tokens; export the NEW IBM token:
-export IBM_QUANTUM_TOKEN="<rotated-token>"
-
-# 2. Confirm the manifest still matches (no post-hoc edits):
-sha256sum -c <(grep -v '^#' MANIFEST.sha256)
-
-# 3. Execute on hardware (Batch mode, ibm_kingston preferred):
-python omni1_harness.py --authorize-hardware --allow-unrotated --backend ibm_kingston --shots 2000
-
-# 4. Independently verify the released record:
-python omni1_verify.py results/OMNI-1-proofrecord.json
-```
-
-Estimated QPU time for the full 70,000-shot batch is ~40–80 s. If it exceeds the remaining
-budget, the preregistered fallback (Arm C → 2 states, 1500 shots/context) applies; invoke by
-editing `PM_STATES`/`--shots` per the preregistration (fallback is declared, not post-hoc).
-
-## Security note
-
-The tokens observed in this environment (`/home/ubuntu/.config/abacusai_auth_secrets.json`)
-should be treated as **compromised** and rotated at the provider before OMNI-1 hardware
-execution or any further authenticated use. No tokens are hard-coded in any committed file.
+- [x] **IBM Quantum hardware run** — executed on `ibm_kingston` (job `d9e3064jeosc73fi98e0`), 52,000 shots, Batch mode.
+- [x] **Independent verification** — `omni1_verify.py` PASS, reconstructed all witness values and aggregate verdict from raw counts.
+- [x] **Zenodo publication** — v1.0 published; v1.1 correction published after erratum.
+- [x] **GitHub push** — published to `derekhone/omni-testbeds`.
