@@ -6,9 +6,11 @@
 
 > **Public claim:** A preregistered demonstration of three independently evaluated nonclassicality witnesses — spatial (Bell-CHSH), temporal (Leggett-Garg K3), and contextual (Peres-Mermin) — bound into one chain-linked, independently reconstructable ExecutionProof governance record.
 
+> ⚠️ **Correction notice (2026-07-18):** the narrative files in this release were corrected against the canonical machine record. See **[ERRATUM-OMNI-1.md](ERRATUM-OMNI-1.md)** for all six corrections (shot count, OMNI nonce, contextuality significance, K3 clarification, removal of two overclaims, disclosed qubit-mapping defect). No measured value, verdict, or the aggregate ALLOW changed.
+
 ## The Experiment
 
-OMNI-1 is the world's first single quantum computing job that simultaneously witnesses all three canonical nonclassicality families and binds them into a unified ExecutionProof governance record:
+To our knowledge, OMNI-1 is an unusual preregistered demonstration that evaluates all three canonical nonclassicality families within a single quantum computing job and binds them into a unified ExecutionProof governance record:
 
 1. **Spatial** — Bell-CHSH inequality (2-qubit entanglement)
 2. **Temporal** — Leggett-Garg K3 inequality (single-qubit coherence)
@@ -22,9 +24,11 @@ Each witness is independently evaluated against preregistered thresholds. The ag
 |---------|-----------|----------|-----------------|-----------|---|---------|
 | Bell-CHSH (S) | S | 2.797 | ≤2.0 | ≥2.2 | 17.82 | VALID_ABOVE ✓ |
 | Leggett-Garg (K3) | K3 | 1.502 | ≤1.0 | ≥1.1 | 12.96 | VALID_ABOVE ✓ |
-| Peres-Mermin (χ) | χ_min | 5.126 | ≤4.0 | ≥4.5 | 22.90 | VALID_ABOVE ✓ |
+| Peres-Mermin (χ) | χ_min | 5.126 | ≤4.0 | ≥4.5 | 20.56 | VALID_ABOVE ✓ |
 
-**Contextuality state-independence:** χ(|000⟩) = 5.144, χ(|+++⟩) = 5.282, χ(GHZ) = 5.126 — all above threshold.
+**Contextuality state-independence:** χ(|000⟩) = 5.144, χ(|+++⟩) = 5.282, χ(GHZ) = 5.126 — all above threshold. Canonical significance is n_σ = 20.5579 for χ_min; per-state σ values are not part of the released record.
+
+> **K3 note:** K3 = 1.502 is statistically consistent with the ideal quantum maximum of 1.5 within measurement uncertainty (finite-shot noise plus calibration/readout systematics); it is decisively above the macrorealist bound of 1.0 (12.96σ). This is not a claim of exceeding the quantum limit.
 
 ### Aggregate ExecutionProof Verdict: **ALLOW**
 
@@ -37,17 +41,20 @@ Each witness is independently evaluated against preregistered thresholds. The ag
 The unified `omni-proofrecord-1.0` binds:
 - Exact QASM3 circuit hashes for all 26 circuits
 - Backend calibration snapshot (ibm_kingston, Heron r2, 156q)
-- Physical qubit mapping
+- Per-circuit logical qubit widths (A = 2q, B = 1q, C = 5q) — **see qubit-mapping caveat below**
 - Raw bitstring counts for all measurements
 - Witness calculations (S, K3, χ per state)
 - Per-arm and aggregate verdicts
 - External entropy: NIST beacon pulse 1865678, LIGO GW150914 hash, IBM job ID
 - Chain link to previous WITNESS-3 record hash
 - MANIFEST.sha256 preregistration lock hashes
-- OMNI nonce and record hash (SHA-256)
+- OMNI nonce (`f6fa824cca3fb05b2ef64684dac2c46ae8c5f41176820a80fa574a4492417042`) and record hash (`fcc409ddcee8774586c3437c52ca3925cde25b4afa2562f3836a922644dd7def`)
+
+> **Qubit-mapping caveat:** in the v1.0 record, `backend_info.qubit_mapping` lists the full 156-qubit backend layout (0–155) for every circuit rather than each circuit's transpiled physical qubits — a logging defect in the v1.0 harness. Reliable per-circuit **logical widths** (2 / 1 / 5 for A / B / C) are recorded in `circuits.<name>.n_qubits`; the **actual physical qubit placement is not recoverable** from the released v1.0 artifacts. The JSON is left unedited to preserve the `record_hash` tamper-evidence; the fix lands in a forward v1.1 harness. See [ERRATUM-OMNI-1.md §6](ERRATUM-OMNI-1.md).
 
 ## Files
 
+- **ERRATUM-OMNI-1.md** — Transparent post-publication correction of six narrative inconsistencies (canonical values, disclosed qubit-mapping defect, removal of overclaims)
 - **OMNI-1-preregistration.md** — Full preregistration document with all arms, thresholds, kill conditions, verdict logic
 - **omni1_harness.py** — Experiment harness (builds circuits, submits to IBM Quantum, computes witnesses, assembles ProofRecord)
 - **omni1_verify.py** — Independent verification script (reconstructs all witnesses and verdicts from raw counts)
@@ -82,7 +89,7 @@ python3 omni1_harness.py --authorize-hardware --allow-unrotated
 
 ## Scope & Honesty
 
-Results apply within the tested circuit model, backend (ibm_kingston, Heron r2, 156 qubits), calibration snapshot, shot counts (2000 per Bell-CHSH setting, 2000 per LG circuit, 1500 per PM context), software harnesses, and stated experimental conditions.
+Results apply within the tested circuit model, backend (ibm_kingston, Heron r2, 156 qubits), calibration snapshot, shot counts (**2,000 shots per circuit, uniform across all 26 circuits — 52,000 total**: Arm A 8,000 / Arm B 8,000 / Arm C 36,000), software harnesses, and stated experimental conditions.
 
 This is an experimental evidence record, not a universal security proof or production certification.
 

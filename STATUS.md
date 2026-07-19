@@ -1,7 +1,16 @@
 # OMNI-1 — STATUS
 
 **Remnant Fieldworks Inc. · Coherent Inheritance Framework (CIF) · ExecutionProof-governed**
-**As of:** simulator validation complete; hardware run withheld.
+**As of:** simulator validation complete; hardware run withheld *(this snapshot pre-dates execution).*
+
+> **POST-EXECUTION UPDATE (2026-07-18):** OMNI-1 has since been executed on IBM Quantum
+> `ibm_kingston` (job `d9e3064jeosc73fi98e0`), independently verified (**ALLOW**), and published
+> to GitHub and Zenodo (concept DOI 10.5281/zenodo.21436016). The executed run used **52,000
+> shots total** (Arm A 8,000 / Arm B 8,000 / Arm C 36,000 — uniform 2,000/circuit), matching the
+> locked harness; the "70,000-shot" figure below reflects the preregistration *prose*, which was
+> inconsistent with the locked harness and never reconciled before locking. The budget fallback
+> was **not** invoked (all three Arm C states ran). See **ERRATUM-OMNI-1.md** for the full
+> correction record. The sections below are retained as the original pre-execution snapshot.
 
 ## Completed
 
