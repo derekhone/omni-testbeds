@@ -1,0 +1,9 @@
+# OMNI-1 Preregistration Lock — MANIFEST.sha256
+# Remnant Fieldworks Inc. · Coherent Inheritance Framework (CIF) · ExecutionProof
+#
+# SHA-256 digests of the preregistration document and the experiment harness, committed to
+# git BEFORE any hardware execution. Any post-hoc edit to prereg or harness changes these
+# digests and is detected by omni1_verify.py (-> DENY on provenance mismatch).
+#
+38f7b3c1429ec7e87103937cb32750e581667cf4c28c1dcfaea58d833e13f8c2  OMNI-1-preregistration.md
+b95c2672b999547f2eeefc9019082e3e25cfee6730ee390c744259dae7c91d7a  omni1_harness.py

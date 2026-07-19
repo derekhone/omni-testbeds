@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+# auto-generated document previews (source of truth is the .md)
+*.pdf
+*.docx
