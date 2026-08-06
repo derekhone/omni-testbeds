@@ -1,3 +1,9 @@
+> **Repository Role:** Preregistered Experiment Series — Threefold Spatial/Temporal/Contextual Witness (OMNI) · Part of the [Remnant Fieldworks](https://remnantfieldworks.com) research and product ecosystem
+
+**Where this fits:** This repository is part of the Remnant Fieldworks quantum witness research program — a high-adversity test environment for provenance and execution integrity that informs the [ExecutionProof](https://executionproof.io) governance architecture. The quantum series tests whether nonclassical entropy sources, Bell-inequality violations, and tamper-evident records can serve as authorization evidence components in ProofRecords. OMNI combines spatial, temporal, and contextual nonclassicality witnesses into a single threefold authorization record.
+
+---
+
 # OMNI-1 — The Threefold Witness
 
 **Remnant Fieldworks Inc. · Coherent Inheritance Framework (CIF) · ExecutionProof-governed**
