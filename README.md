@@ -136,3 +136,7 @@ Statistical σ reflects binomial shot noise only.
 ---
 
 **Coherent Inheritance Framework (CIF) · Remnant Fieldworks Inc.**
+
+### License scope
+
+See [LICENSE-SCOPE.md](LICENSE-SCOPE.md). No new blanket grant is made; existing permissions are preserved.
